@@ -2,24 +2,24 @@
 
 
 const Person = [
-  {
-    name: "Tatas",
-    company: "Arkademy",
-    job: "Trainer",
-    status: "single",
-    city: "Jogja"
-  },
-  {
-    name: "Pratama",
-    company: "Emago",
-    job: "Trainer",
-    status: "single",
-    city: "Jakarta"
-  }
+    {
+        name: "Tatas",
+        company: "Arkademy",
+        job: "Trainer",
+        status: "single",
+        city: "Jogja"
+    },
+    {
+        name: "Pratama",
+        company: "Emago",
+        job: "Trainer",
+        status: "single",
+        city: "Jakarta"
+    }
 ];
 
 const updatePerson = Person.map(i => {
-  return { ...i };
+    return { ...i };
 });
 // const updatePerson = [...Person]                                                             //meng-copy nilai pada array person ke updatePerson
 
@@ -30,7 +30,7 @@ updateTatas.status = "Marriage";
 const updatePratama = updatePerson.find(updatePerson => updatePerson.name == "Pratama");
 updatePratama.city = "Jogja";
 
-console.log("Sebelum disesuaikan" , Person)
+console.log("Sebelum disesuaikan", Person)
 console.log("Sesudah disesuaikan ", updatePerson);
 
 // if (updatePerson.name == "Tatas" ) {
