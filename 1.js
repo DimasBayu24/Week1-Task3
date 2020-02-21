@@ -23,12 +23,16 @@ const updatePerson = Person.map(i => {
 });
 // const updatePerson = [...Person]                                                             //meng-copy nilai pada array person ke updatePerson
 
-const updateTatas = updatePerson.find(updatePerson => updatePerson.name == "Tatas");
-updateTatas.city = "Jakarta";
-updateTatas.status = "Marriage";
+// const updateTatas = updatePerson.find(updatePerson => updatePerson.name == "Tatas");
+// updateTatas.city = "Jakarta";
+// updateTatas.status = "Marriage";
 
-const updatePratama = updatePerson.find(updatePerson => updatePerson.name == "Pratama");
-updatePratama.city = "Jogja";
+// const updatePratama = updatePerson.find(updatePerson => updatePerson.name == "Pratama");
+// updatePratama.city = "Jogja";
+updatePerson[0].city = "Jakarta";
+updatePerson[0].status = "Married";
+updatePerson[1].city = "Jogja";
+
 
 console.log("Sebelum disesuaikan", Person)
 console.log("Sesudah disesuaikan ", updatePerson);
